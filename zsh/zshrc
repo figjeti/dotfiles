@@ -128,8 +128,6 @@ zstyle :bracketed-paste-magic paste-init pasteinit
 zstyle :bracketed-paste-magic paste-finish pastefinish
 ### Fix slowness of pastes
 
-if [ -e /home/jess/.nix-profile/etc/profile.d/nix.sh ]; then . /home/jess/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -137,3 +135,13 @@ export NVM_DIR="$HOME/.nvm"
 if [[ $- == *i* && $0 == '/usr/bin/zsh' ]]; then
     ~/.dotfiles/scripts/login.sh
 fi
+alias creoks="ssh josh.wilcott@10.10.199.222"
+alias hosted="ssh josh.wilcott@10.10.199.225"
+alias ef="ssh -p22120 gohealth@70.254.224.130"
+alias efdb="ssh -p22121 gohealth@70.254.224.130"
+alias thunder="ssh joshw@10.10.114.15"
+alias web="ssh '10.10.114.21'"
+alias shire="ssh josh.wilcott@10.10.114.11"
+alias hobbiton="ssh josh.wilcott@10.10.114.12"
+alias bree="ssh josh.wilcott@10.10.114.13"
+alias gitsave="git add * && git commit -m 'saving off for merge' && git push"
